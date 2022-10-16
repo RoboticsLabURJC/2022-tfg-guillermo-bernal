@@ -1,0 +1,18 @@
+---
+title: "Semana 1: Instalación de ROS2 Humble, Gazebo 11.10 y Turtlebot2"
+categories:
+  - Weblog
+tags:
+  - ROS2 Humble
+  - Gazebo
+  - Turtlebot2
+---
+
+La tarea de esta semana es intentar poner a funcionar los drivers del Turtlebot2 en el simulador Gazebo en su versión 11.10 en Ubuntu 22.04 usando ROS2 Humble.
+Esto se ha hecho con el fin de poner los cimientos de lo que será mi TFG.
+
+Al principio, he intentado realizar este mismo objetivo pero en la version de Ubuntu de 20.02, con poco éxito y muchos problemas.
+
+Una vez instalado el Ubuntu 22.04 la cosa ha ido mejor. A partir de una versión para ROS2 Foxy del Turtlebot2 (esta versión ha sido sacada del repositiorio del [TFG de Carlos Caminero](https://github.com/RoboticsLabURJC/2021-tfg-carlos-caminero)) ha sido bastante fácil poderlo usar en la versión de ROS Humble.
+
+Los drivers de la cámara, motores y láser funcionan correctamente. Aunque de momento no puedo lanzar el mundo del hospital en Gazebo. 
