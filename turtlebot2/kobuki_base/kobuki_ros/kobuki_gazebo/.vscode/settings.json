@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/guillermo/ws_caca/build/py_pubsub",
+        "/home/guillermo/ws_caca/install/py_pubsub/lib/python3.10/site-packages",
+        "/home/guillermo/ws_caca/install/kobuki_ros_interfaces/local/lib/python3.10/dist-packages",
+        "/home/guillermo/ws_caca/build/follow_person",
+        "/home/guillermo/ws_caca/install/follow_person/lib/python3.10/site-packages",
+        "/home/guillermo/ws_caca/install/example_interfaces/local/lib/python3.10/dist-packages",
+        "/home/guillermo/ws_caca/build/bumpgo_py",
+        "/home/guillermo/ws_caca/install/bumpgo_py/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
