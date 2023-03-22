@@ -1,0 +1,27 @@
+[0.559s] Invoking command in '/home/guillermo/tello_ws/build/tello_camera': PYTHONPATH=/home/guillermo/tello_ws/build/tello_camera/prefix_override:/home/guillermo/tello_ws/install/tello_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/guillermo/tello_ws/build/tello_camera/build --no-deps install_data
+[0.782s] running develop
+[0.782s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.782s]   warnings.warn(
+[0.783s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.783s]   warnings.warn(
+[0.829s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[0.829s]   warnings.warn(
+[0.829s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[0.829s]   warnings.warn(
+[0.830s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[0.830s]   warnings.warn(
+[0.911s] running egg_info
+[0.911s] writing tello_camera.egg-info/PKG-INFO
+[0.911s] writing dependency_links to tello_camera.egg-info/dependency_links.txt
+[0.912s] writing entry points to tello_camera.egg-info/entry_points.txt
+[0.912s] writing requirements to tello_camera.egg-info/requires.txt
+[0.912s] writing top-level names to tello_camera.egg-info/top_level.txt
+[0.915s] reading manifest file 'tello_camera.egg-info/SOURCES.txt'
+[0.915s] writing manifest file 'tello_camera.egg-info/SOURCES.txt'
+[0.916s] running build_ext
+[0.917s] Creating /home/guillermo/tello_ws/install/tello_camera/lib/python3.10/site-packages/tello-camera.egg-link (link to .)
+[0.917s] Installing tello_cam script to /home/guillermo/tello_ws/install/tello_camera/lib/tello_camera
+[0.917s] 
+[0.917s] Installed /home/guillermo/tello_ws/build/tello_camera
+[0.917s] running install_data
+[0.943s] Invoked command in '/home/guillermo/tello_ws/build/tello_camera' returned '0': PYTHONPATH=/home/guillermo/tello_ws/build/tello_camera/prefix_override:/home/guillermo/tello_ws/install/tello_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/guillermo/tello_ws/build/tello_camera/build --no-deps install_data

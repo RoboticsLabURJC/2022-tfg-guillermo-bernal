@@ -1,0 +1,3 @@
+[console_scripts]
+tello_simple_node = tello_simple_teleop.tello_simple_teleop:main
+

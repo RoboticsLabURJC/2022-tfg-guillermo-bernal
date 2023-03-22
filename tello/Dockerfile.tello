@@ -1,0 +1,16 @@
+FROM humble_base
+
+RUN echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
+RUN sudo rosdep fix-permissions
+# Tello physical
+WORKDIR /home
+RUN mkdir -p tello_ws/src
+RUN git clone https://github.com/JdeRobot/CustomRobots.git
+RUN cd CustomRobots && git checkout humble-devel
+RUN ls
+RUN cd CustomRobots/CustomRobots && mv tello_phy ../../tello_ws/src
+WORKDIR /home/tello_ws/src/tello_phy
+RUN mv * .. && rm -rf tello_phy
+WORKDIR /home/tello_ws
+RUN rosdep update && rosdep install --from-paths src --ignore-src -r -y
+RUN sudo apt install --no-install-recommends libasio-dev

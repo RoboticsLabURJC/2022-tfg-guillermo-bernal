@@ -1,0 +1,34 @@
+[ 18%] Built target tello_joy_node
+[ 18%] Built target tello_emulator
+[ 31%] Built target tello_joy_main
+[ 63%] Built target tello_driver_node
+[100%] Built target tello_driver_main
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/environment/library_path.sh
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/environment/library_path.dsv
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/lib/libtello_driver_node.so
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/lib/libtello_joy_node.so
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/lib/tello_driver/tello_driver_main
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/lib/tello_driver/tello_joy_main
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/lib/tello_driver/tello_emulator
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/cfg/camera_info.yaml
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/launch/emulator_launch.py
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/launch/emulators_launch.py
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/launch/teleop_launch.py
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/ament_index/resource_index/package_run_dependencies/tello_driver
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/ament_index/resource_index/parent_prefix_path/tello_driver
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/environment/ament_prefix_path.sh
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/environment/ament_prefix_path.dsv
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/environment/path.sh
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/environment/path.dsv
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/local_setup.bash
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/local_setup.sh
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/local_setup.zsh
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/local_setup.dsv
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/package.dsv
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/ament_index/resource_index/packages/tello_driver
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/ament_index/resource_index/rclcpp_components/tello_driver
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/cmake/tello_driverConfig.cmake
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/cmake/tello_driverConfig-version.cmake
+-- Symlinking: /home/guillermo/tello_ws/install/tello_driver/share/tello_driver/package.xml

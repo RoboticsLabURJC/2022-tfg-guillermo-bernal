@@ -1,0 +1,3 @@
+[console_scripts]
+tello_camera_node = tello_camera.tello_camera:main
+

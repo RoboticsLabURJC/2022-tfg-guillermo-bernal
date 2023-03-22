@@ -1,0 +1,78 @@
+FROM humble_base
+
+# Turtlebot2 simulated
+WORKDIR /home
+
+RUN mkdir -p turtlebot2_ws/src
+COPY ./turtlebot2 /home/turtlebot2_ws/src
+WORKDIR /home/turtlebot2_ws
+RUN sudo rosdep fix-permissions 
+RUN rosdep update && rosdep install --from-paths src --ignore-src -r -y
+RUN colcon build --symlink-install
+COPY empty_world_robot /home/turtlebot2_ws
+
+# Physical Turtlebot 
+
+RUN apt-get install ros-humble-diagnostic-updater
+
+RUN sudo usermod -a -G audio root
+
+# Include and build our Robot
+RUN echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
+
+WORKDIR /home
+ADD ./launcher_turtle_phy.sh /home/turtlebot2_ws/
+ADD ./post_instructions.sh /home/turtlebot2_ws/
+ADD ./turtlebot2 /home/turtlebot2_ws/src/turtlebot2
+ADD ./ThirdParty /home/turtlebot2_ws/src/ThirdParty
+ADD ./openni2_camera /home/turtlebot2_ws/src/openni2_camera
+ADD ./post_instructions.sh /home/turtlebot2_ws/
+ADD ./10-rplidar.rules /home/turtlebot2_ws/
+ADD ./56-orbbec-usb.rules /home/turtlebot2_ws/
+ADD ./config.rviz /home/turtlebot2_ws/
+WORKDIR /home/turtlebot2_ws
+RUN chmod +x post_instructions.sh
+RUN git clone https://github.com/IntelligentRoboticsLabs/Robots.git
+RUN mv Robots src/
+RUN sudo rosdep fix-permissions 
+
+
+
+WORKDIR src/ThirdParty/kobuki_core
+RUN sudo cp 60-kobuki.rules /etc/udev/rules.d/
+WORKDIR /home/turtlebot2_ws
+RUN mv 56-orbbec-usb.rules /etc/udev/rules.d/
+RUN mv 10-rplidar.rules /etc/udev/rules.d/
+
+
+RUN rosdep update && rosdep install --from-paths src --ignore-src -r -y
+
+RUN colcon build --symlink-install
+
+
+
+
+# Web
+
+# Django server
+EXPOSE 8000
+
+# Manager websocket
+EXPOSE 8765
+
+# Code websocket
+EXPOSE 1905
+EXPOSE 1904
+
+# GUI websockets
+EXPOSE 2303
+EXPOSE 2304
+
+# noVNC Console
+EXPOSE 1108
+
+# noVNC Gazebo
+EXPOSE 6080
+
+# WebRtc
+EXPOSE 1831

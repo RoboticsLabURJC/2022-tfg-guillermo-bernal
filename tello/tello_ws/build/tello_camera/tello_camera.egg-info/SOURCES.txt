@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/tello_camera
+tello_camera/__init__.py
+tello_camera/tello_camera.py
+tello_camera.egg-info/PKG-INFO
+tello_camera.egg-info/SOURCES.txt
+tello_camera.egg-info/dependency_links.txt
+tello_camera.egg-info/entry_points.txt
+tello_camera.egg-info/requires.txt
+tello_camera.egg-info/top_level.txt
+tello_camera.egg-info/zip-safe

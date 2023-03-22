@@ -1,0 +1,27 @@
+[0.617s] Invoking command in '/home/guillermo/tello_ws/build/tello_simple_teleop': PYTHONPATH=/home/guillermo/tello_ws/build/tello_simple_teleop/prefix_override:/home/guillermo/tello_ws/install/tello_simple_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/guillermo/tello_ws/build/tello_simple_teleop/build --no-deps install_data
+[0.783s] running develop
+[0.783s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.783s]   warnings.warn(
+[0.784s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.784s]   warnings.warn(
+[0.820s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[0.820s]   warnings.warn(
+[0.820s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[0.820s]   warnings.warn(
+[0.821s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[0.821s]   warnings.warn(
+[0.887s] running egg_info
+[0.887s] writing tello_simple_teleop.egg-info/PKG-INFO
+[0.887s] writing dependency_links to tello_simple_teleop.egg-info/dependency_links.txt
+[0.887s] writing entry points to tello_simple_teleop.egg-info/entry_points.txt
+[0.887s] writing requirements to tello_simple_teleop.egg-info/requires.txt
+[0.887s] writing top-level names to tello_simple_teleop.egg-info/top_level.txt
+[0.889s] reading manifest file 'tello_simple_teleop.egg-info/SOURCES.txt'
+[0.889s] writing manifest file 'tello_simple_teleop.egg-info/SOURCES.txt'
+[0.890s] running build_ext
+[0.890s] Creating /home/guillermo/tello_ws/install/tello_simple_teleop/lib/python3.10/site-packages/tello-simple-teleop.egg-link (link to .)
+[0.891s] Installing tello_simple_node script to /home/guillermo/tello_ws/install/tello_simple_teleop/lib/tello_simple_teleop
+[0.891s] 
+[0.891s] Installed /home/guillermo/tello_ws/build/tello_simple_teleop
+[0.891s] running install_data
+[0.927s] Invoked command in '/home/guillermo/tello_ws/build/tello_simple_teleop' returned '0': PYTHONPATH=/home/guillermo/tello_ws/build/tello_simple_teleop/prefix_override:/home/guillermo/tello_ws/install/tello_simple_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/guillermo/tello_ws/build/tello_simple_teleop/build --no-deps install_data

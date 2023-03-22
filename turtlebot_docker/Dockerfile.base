@@ -67,6 +67,10 @@ RUN wget https://packages.osrfoundation.org/gazebo.gpg -O /usr/share/keyrings/pk
     ros-${ROS_DISTRO}-gazebo* \
   && rm -rf /var/lib/apt/lists/*
 
+#RUN apt-get install -y ros-humble-ecl-*
+RUN apt-get install -y ros-humble-pcl-* -y
+RUN sudo apt install ros-humble-rosidl-* -y
+
 # pip install dependencies
 RUN pip install pylint
 
@@ -75,6 +79,33 @@ RUN apt-get update && apt-get install -y x11vnc xvfb xterm
 
 # Install noVNC
 #RUN apt-get update && apt-get install -y novnc
+# Install VNC
+# Xorg segfault error mitigation
+RUN pip install pylint
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        dbus-x11 \
+        libdbus-c++-1-0v5 && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y \
+  xvfb xauth xfonts-base xkb-data x11-xkb-utils \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get --no-install-recommends install -y \
+		x11vnc \
+		xterm \
+		xserver-xorg-video-dummy \
+		x11-apps \
+	&& apt-get -y autoremove \
+	&& apt-get clean autoclean \
+	&& rm -rf /var/lib/apt/lists/{apt,dpkg,cache,log} /tmp/* /var/tmp/*
+
+RUN wget https://xpra.org/xorg.conf \
+    && rm -rf /tmp/*
+
+
+# Install noVNC
+RUN git clone https://github.com/novnc/noVNC.git
 
 # Source ros humble
 RUN echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc

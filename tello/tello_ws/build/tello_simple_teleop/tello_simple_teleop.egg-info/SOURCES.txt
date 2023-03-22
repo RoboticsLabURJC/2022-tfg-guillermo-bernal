@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/tello_simple_teleop
+tello_simple_teleop/__init__.py
+tello_simple_teleop/tello_simple_teleop.py
+tello_simple_teleop.egg-info/PKG-INFO
+tello_simple_teleop.egg-info/SOURCES.txt
+tello_simple_teleop.egg-info/dependency_links.txt
+tello_simple_teleop.egg-info/entry_points.txt
+tello_simple_teleop.egg-info/requires.txt
+tello_simple_teleop.egg-info/top_level.txt
+tello_simple_teleop.egg-info/zip-safe

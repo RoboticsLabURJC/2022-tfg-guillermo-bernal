@@ -1,0 +1,47 @@
+[ 11%] [34m[1mGenerate /home/guillermo/tello_ws/build/tello_description/urdf/tello.urdf[0m
+[ 22%] [34m[1mGenerate /home/guillermo/tello_ws/build/tello_description/urdf/tello_7.urdf[0m
+/bin/sh: 1: /home/guillermo/tello_ws/src/tello_ros/tello_description/src/replace.py: not found
+gmake[2]: *** [CMakeFiles/generate_urdf.dir/build.make:73: urdf/tello.urdf] Error 127
+gmake[2]: *** Se borra el archivo 'urdf/tello.urdf'
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/generate_urdf.dir/all] Error 2
+gmake[1]: *** Se espera a que terminen otras tareas....
+/bin/sh: 1: /home/guillermo/tello_ws/src/tello_ros/tello_description/src/replace.py: not found
+gmake[2]: *** [CMakeFiles/generate_urdf_7.dir/build.make:73: urdf/tello_7.urdf] Error 127
+gmake[2]: *** Se borra el archivo 'urdf/tello_7.urdf'
+gmake[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/generate_urdf_7.dir/all] Error 2
+[ 33%] [34m[1mGenerate /home/guillermo/tello_ws/build/tello_description/urdf/tello_1.urdf[0m
+[ 44%] [34m[1mGenerate /home/guillermo/tello_ws/build/tello_description/urdf/tello_5.urdf[0m
+[ 55%] [34m[1mGenerate /home/guillermo/tello_ws/build/tello_description/urdf/tello_8.urdf[0m
+/bin/sh: 1: /home/guillermo/tello_ws/src/tello_ros/tello_description/src/replace.py: not found
+gmake[2]: *** [CMakeFiles/generate_urdf_5.dir/build.make:73: urdf/tello_5.urdf] Error 127
+gmake[2]: *** Se borra el archivo 'urdf/tello_5.urdf'
+gmake[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/generate_urdf_5.dir/all] Error 2
+[ 66%] [34m[1mGenerate /home/guillermo/tello_ws/build/tello_description/urdf/tello_2.urdf[0m
+/bin/sh: 1: /home/guillermo/tello_ws/src/tello_ros/tello_description/src/replace.py: not found
+gmake[2]: *** [CMakeFiles/generate_urdf_1.dir/build.make:73: urdf/tello_1.urdf] Error 127
+gmake[2]: *** Se borra el archivo 'urdf/tello_1.urdf'
+gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/generate_urdf_1.dir/all] Error 2
+[ 77%] [34m[1mGenerate /home/guillermo/tello_ws/build/tello_description/urdf/tello_6.urdf[0m
+/bin/sh: 1: /home/guillermo/tello_ws/src/tello_ros/tello_description/src/replace.py: not found
+gmake[2]: *** [CMakeFiles/generate_urdf_8.dir/build.make:73: urdf/tello_8.urdf] Error 127
+gmake[2]: *** Se borra el archivo 'urdf/tello_8.urdf'
+gmake[1]: *** [CMakeFiles/Makefile2:361: CMakeFiles/generate_urdf_8.dir/all] Error 2
+[ 88%] [34m[1mGenerate /home/guillermo/tello_ws/build/tello_description/urdf/tello_4.urdf[0m
+/bin/sh: 1: /home/guillermo/tello_ws/src/tello_ros/tello_description/src/replace.py: not found
+gmake[2]: *** [CMakeFiles/generate_urdf_2.dir/build.make:73: urdf/tello_2.urdf] Error 127
+gmake[2]: *** Se borra el archivo 'urdf/tello_2.urdf'
+gmake[1]: *** [CMakeFiles/Makefile2:205: CMakeFiles/generate_urdf_2.dir/all] Error 2
+/bin/sh: 1: /home/guillermo/tello_ws/src/tello_ros/tello_description/src/replace.py: not found
+/bin/sh: 1: /home/guillermo/tello_ws/src/tello_ros/tello_description/src/replace.py: not found
+gmake[2]: *** [CMakeFiles/generate_urdf_4.dir/build.make:73: urdf/tello_4.urdf] Error 127
+gmake[2]: *** Se borra el archivo 'urdf/tello_4.urdf'
+gmake[2]: *** [CMakeFiles/generate_urdf_6.dir/build.make:73: urdf/tello_6.urdf] Error 127
+gmake[2]: *** Se borra el archivo 'urdf/tello_6.urdf'
+gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/generate_urdf_4.dir/all] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:309: CMakeFiles/generate_urdf_6.dir/all] Error 2
+[100%] [34m[1mGenerate /home/guillermo/tello_ws/build/tello_description/urdf/tello_3.urdf[0m
+/bin/sh: 1: /home/guillermo/tello_ws/src/tello_ros/tello_description/src/replace.py: not found
+gmake[2]: *** [CMakeFiles/generate_urdf_3.dir/build.make:73: urdf/tello_3.urdf] Error 127
+gmake[2]: *** Se borra el archivo 'urdf/tello_3.urdf'
+gmake[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/generate_urdf_3.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

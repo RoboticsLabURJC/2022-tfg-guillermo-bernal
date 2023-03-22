@@ -1,0 +1,98 @@
+[0.011s] Invoking command in '/home/guillermo/tello_ws/build/tello_gazebo': AMENT_PREFIX_PATH=/home/guillermo/tello_ws/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/guillermo/tello_ws/install/tello_msgs:/home/guillermo/ws_caca/install/worlds:/home/guillermo/ws_caca/install/turtlebot2:/home/guillermo/ws_caca/install/tello_driver:/home/guillermo/ws_caca/install/tello_msgs:/home/guillermo/ws_caca/install/tello_description:/home/guillermo/ws_caca/install/kobuki_ros:/home/guillermo/ws_caca/install/kobuki_node:/home/guillermo/ws_caca/install/kobuki_auto_docking:/home/guillermo/ws_caca/install/kobuki_core:/home/guillermo/ws_caca/install/ecl_core:/home/guillermo/ws_caca/install/ecl_statistics:/home/guillermo/ws_caca/install/ecl_mobile_robot:/home/guillermo/ws_caca/install/ecl_manipulators:/home/guillermo/ws_caca/install/ecl_core_apps:/home/guillermo/ws_caca/install/ecl_geometry:/home/guillermo/ws_caca/install/ecl_linear_algebra:/home/guillermo/ws_caca/install/sophus:/home/guillermo/ws_caca/install/rplidar_ros:/home/guillermo/ws_caca/install/ros2_shared:/home/guillermo/ws_caca/install/openni2_camera:/home/guillermo/ws_caca/install/openni2_camera_msgs:/home/guillermo/ws_caca/install/laser_filters:/home/guillermo/ws_caca/install/kobuki_safety_controller:/home/guillermo/ws_caca/install/kobuki_random_walker:/home/guillermo/ws_caca/install/kobuki_keyop:/home/guillermo/ws_caca/install/kobuki_bumper2pc:/home/guillermo/ws_caca/install/kobuki_ros_interfaces:/home/guillermo/ws_caca/install/kobuki_ftdi:/home/guillermo/ws_caca/install/kobuki_description:/home/guillermo/ws_caca/install/ir_tiago:/home/guillermo/ws_caca/install/ir_kobuki:/home/guillermo/ws_caca/install/ecl_streams:/home/guillermo/ws_caca/install/ecl_sigslots:/home/guillermo/ws_caca/install/ecl_ipc:/home/guillermo/ws_caca/install/ecl_devices:/home/guillermo/ws_caca/install/ecl_threads:/home/guillermo/ws_caca/install/ecl_containers:/home/guillermo/ws_caca/install/ecl_utilities:/home/guillermo/ws_caca/install/ecl_math:/home/guillermo/ws_caca/install/ecl_formatters:/home/guillermo/ws_caca/install/ecl_converters:/home/guillermo/ws_caca/install/ecl_concepts:/home/guillermo/ws_caca/install/ecl_type_traits:/home/guillermo/ws_caca/install/ecl_tools:/home/guillermo/ws_caca/install/ecl_time:/home/guillermo/ws_caca/install/ecl_lite:/home/guillermo/ws_caca/install/ecl_time_lite:/home/guillermo/ws_caca/install/ecl_sigslots_lite:/home/guillermo/ws_caca/install/ecl_mpl:/home/guillermo/ws_caca/install/ecl_io:/home/guillermo/ws_caca/install/ecl_filesystem:/home/guillermo/ws_caca/install/ecl_exceptions:/home/guillermo/ws_caca/install/ecl_errors:/home/guillermo/ws_caca/install/ecl_converters_lite:/home/guillermo/ws_caca/install/ecl_console:/home/guillermo/ws_caca/install/ecl_config:/home/guillermo/ws_caca/install/ecl_command_line:/home/guillermo/ws_caca/install/ecl_build:/home/guillermo/ws_caca/install/ecl_license:/home/guillermo/ws_caca/install/ecl_eigen:/opt/ros/humble LD_LIBRARY_PATH=/home/guillermo/tello_ws/install/tello_msgs/lib:/home/guillermo/ws_caca/install/tello_driver/lib:/home/guillermo/ws_caca/install/tello_msgs/lib:/home/guillermo/ws_caca/install/kobuki_node/lib:/home/guillermo/ws_caca/install/kobuki_auto_docking/lib:/home/guillermo/ws_caca/install/kobuki_core/lib:/home/guillermo/ws_caca/install/ecl_statistics/lib:/home/guillermo/ws_caca/install/ecl_mobile_robot/lib:/home/guillermo/ws_caca/install/ecl_manipulators/lib:/home/guillermo/ws_caca/install/ecl_geometry/lib:/home/guillermo/ws_caca/install/ecl_linear_algebra/lib:/home/guillermo/ws_caca/install/rplidar_ros/lib:/home/guillermo/ws_caca/install/openni2_camera/lib:/home/guillermo/ws_caca/install/openni2_camera_msgs/lib:/home/guillermo/ws_caca/install/laser_filters/lib:/home/guillermo/ws_caca/install/kobuki_safety_controller/lib:/home/guillermo/ws_caca/install/kobuki_random_walker/lib:/home/guillermo/ws_caca/install/kobuki_keyop/lib:/home/guillermo/ws_caca/install/kobuki_bumper2pc/lib:/home/guillermo/ws_caca/install/kobuki_ros_interfaces/lib:/home/guillermo/ws_caca/install/ecl_streams/lib:/home/guillermo/ws_caca/install/ecl_ipc/lib:/home/guillermo/ws_caca/install/ecl_devices/lib:/home/guillermo/ws_caca/install/ecl_threads/lib:/home/guillermo/ws_caca/install/ecl_formatters/lib:/home/guillermo/ws_caca/install/ecl_type_traits/lib:/home/guillermo/ws_caca/install/ecl_time/lib:/home/guillermo/ws_caca/install/ecl_time_lite/lib:/home/guillermo/ws_caca/install/ecl_io/lib:/home/guillermo/ws_caca/install/ecl_filesystem/lib:/home/guillermo/ws_caca/install/ecl_exceptions/lib:/home/guillermo/ws_caca/install/ecl_errors/lib:/home/guillermo/ws_caca/install/ecl_license/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/ PYTHONPATH=/home/guillermo/tello_ws/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/guillermo/tello_ws/src/tello_ros/tello_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/guillermo/tello_ws/install/tello_gazebo
+[0.047s] -- The C compiler identification is GNU 11.3.0
+[0.083s] -- The CXX compiler identification is GNU 11.3.0
+[0.088s] -- Detecting C compiler ABI info
+[0.135s] -- Detecting C compiler ABI info - done
+[0.141s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.141s] -- Detecting C compile features
+[0.141s] -- Detecting C compile features - done
+[0.143s] -- Detecting CXX compiler ABI info
+[0.196s] -- Detecting CXX compiler ABI info - done
+[0.201s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.201s] -- Detecting CXX compile features
+[0.201s] -- Detecting CXX compile features - done
+[0.205s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.333s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.377s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.444s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.444s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.445s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.445s]   problems in calling code that expects `find_package` result variables
+[0.445s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.445s] Call Stack (most recent call first):
+[0.445s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.445s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.445s]   CMakeLists.txt:27 (find_package)
+[0.445s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.445s] [0m
+[0.445s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.448s] -- Checking for module 'bullet>=2.82'
+[0.460s] --   Found bullet, version 3.05
+[0.551s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.587s] -- Found assimp: /usr/include (found version "5.2.0") 
+[0.627s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.770s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[0.790s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.801s] -- Looking for ignition-math6 -- found version 6.13.0
+[0.812s] -- Searching for dependencies of ignition-math6
+[0.814s] -- Looking for OGRE...
+[0.814s] -- OGRE_PREFIX_WATCH changed.
+[0.817s] -- Checking for module 'OGRE'
+[0.828s] --   Found OGRE, version 1.9.0
+[0.852s] -- Found Ogre Ghadamon (1.9.0)
+[0.862s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.869s] -- Looking for OGRE_Paging...
+[0.877s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.877s] -- Looking for OGRE_Terrain...
+[0.883s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.883s] -- Looking for OGRE_Property...
+[0.890s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.890s] -- Looking for OGRE_RTShaderSystem...
+[0.896s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.897s] -- Looking for OGRE_Volume...
+[0.903s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.903s] -- Looking for OGRE_Overlay...
+[0.910s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.057s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.062s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.062s] -- Searching for dependencies of ignition-transport8
+[1.077s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.086s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.089s] -- Checking for module 'libzmq >= 4'
+[1.104s] --   Found libzmq , version 4.3.4
+[1.128s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.133s] -- Checking for module 'uuid'
+[1.143s] --   Found uuid, version 2.37.2
+[1.166s] -- Found UUID: TRUE  
+[1.171s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.171s] -- Searching for dependencies of ignition-msgs5
+[1.186s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.190s] -- Checking for module 'tinyxml2'
+[1.201s] --   Found tinyxml2, version 9.0.0
+[1.225s] [31mCMake Error at /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-targets.cmake:90 (message):
+[1.226s]   The imported target "ignition-transport8::ignition-transport8" references
+[1.226s]   the file
+[1.226s] 
+[1.226s]      "/usr/lib/x86_64-linux-gnu/libignition-transport8.so.8.3.0"
+[1.226s] 
+[1.226s]   but this file does not exist.  Possible reasons include:
+[1.226s] 
+[1.226s]   * The file was deleted, renamed, or moved to another location.
+[1.226s] 
+[1.226s]   * An install or uninstall procedure did not complete successfully.
+[1.226s] 
+[1.226s]   * The installation package was faulty and contained
+[1.226s] 
+[1.227s]      "/usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-targets.cmake"
+[1.227s] 
+[1.227s]   but not all the files it references.
+[1.227s] 
+[1.227s] Call Stack (most recent call first):
+[1.227s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:136 (include)
+[1.227s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)
+[1.227s]   CMakeLists.txt:27 (find_package)
+[1.227s] 
+[1.227s] [0m
+[1.227s] -- Configuring incomplete, errors occurred!
+[1.227s] See also "/home/guillermo/tello_ws/build/tello_gazebo/CMakeFiles/CMakeOutput.log".
+[1.232s] Invoked command in '/home/guillermo/tello_ws/build/tello_gazebo' returned '1': AMENT_PREFIX_PATH=/home/guillermo/tello_ws/install/tello_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/guillermo/tello_ws/install/tello_msgs:/home/guillermo/ws_caca/install/worlds:/home/guillermo/ws_caca/install/turtlebot2:/home/guillermo/ws_caca/install/tello_driver:/home/guillermo/ws_caca/install/tello_msgs:/home/guillermo/ws_caca/install/tello_description:/home/guillermo/ws_caca/install/kobuki_ros:/home/guillermo/ws_caca/install/kobuki_node:/home/guillermo/ws_caca/install/kobuki_auto_docking:/home/guillermo/ws_caca/install/kobuki_core:/home/guillermo/ws_caca/install/ecl_core:/home/guillermo/ws_caca/install/ecl_statistics:/home/guillermo/ws_caca/install/ecl_mobile_robot:/home/guillermo/ws_caca/install/ecl_manipulators:/home/guillermo/ws_caca/install/ecl_core_apps:/home/guillermo/ws_caca/install/ecl_geometry:/home/guillermo/ws_caca/install/ecl_linear_algebra:/home/guillermo/ws_caca/install/sophus:/home/guillermo/ws_caca/install/rplidar_ros:/home/guillermo/ws_caca/install/ros2_shared:/home/guillermo/ws_caca/install/openni2_camera:/home/guillermo/ws_caca/install/openni2_camera_msgs:/home/guillermo/ws_caca/install/laser_filters:/home/guillermo/ws_caca/install/kobuki_safety_controller:/home/guillermo/ws_caca/install/kobuki_random_walker:/home/guillermo/ws_caca/install/kobuki_keyop:/home/guillermo/ws_caca/install/kobuki_bumper2pc:/home/guillermo/ws_caca/install/kobuki_ros_interfaces:/home/guillermo/ws_caca/install/kobuki_ftdi:/home/guillermo/ws_caca/install/kobuki_description:/home/guillermo/ws_caca/install/ir_tiago:/home/guillermo/ws_caca/install/ir_kobuki:/home/guillermo/ws_caca/install/ecl_streams:/home/guillermo/ws_caca/install/ecl_sigslots:/home/guillermo/ws_caca/install/ecl_ipc:/home/guillermo/ws_caca/install/ecl_devices:/home/guillermo/ws_caca/install/ecl_threads:/home/guillermo/ws_caca/install/ecl_containers:/home/guillermo/ws_caca/install/ecl_utilities:/home/guillermo/ws_caca/install/ecl_math:/home/guillermo/ws_caca/install/ecl_formatters:/home/guillermo/ws_caca/install/ecl_converters:/home/guillermo/ws_caca/install/ecl_concepts:/home/guillermo/ws_caca/install/ecl_type_traits:/home/guillermo/ws_caca/install/ecl_tools:/home/guillermo/ws_caca/install/ecl_time:/home/guillermo/ws_caca/install/ecl_lite:/home/guillermo/ws_caca/install/ecl_time_lite:/home/guillermo/ws_caca/install/ecl_sigslots_lite:/home/guillermo/ws_caca/install/ecl_mpl:/home/guillermo/ws_caca/install/ecl_io:/home/guillermo/ws_caca/install/ecl_filesystem:/home/guillermo/ws_caca/install/ecl_exceptions:/home/guillermo/ws_caca/install/ecl_errors:/home/guillermo/ws_caca/install/ecl_converters_lite:/home/guillermo/ws_caca/install/ecl_console:/home/guillermo/ws_caca/install/ecl_config:/home/guillermo/ws_caca/install/ecl_command_line:/home/guillermo/ws_caca/install/ecl_build:/home/guillermo/ws_caca/install/ecl_license:/home/guillermo/ws_caca/install/ecl_eigen:/opt/ros/humble LD_LIBRARY_PATH=/home/guillermo/tello_ws/install/tello_msgs/lib:/home/guillermo/ws_caca/install/tello_driver/lib:/home/guillermo/ws_caca/install/tello_msgs/lib:/home/guillermo/ws_caca/install/kobuki_node/lib:/home/guillermo/ws_caca/install/kobuki_auto_docking/lib:/home/guillermo/ws_caca/install/kobuki_core/lib:/home/guillermo/ws_caca/install/ecl_statistics/lib:/home/guillermo/ws_caca/install/ecl_mobile_robot/lib:/home/guillermo/ws_caca/install/ecl_manipulators/lib:/home/guillermo/ws_caca/install/ecl_geometry/lib:/home/guillermo/ws_caca/install/ecl_linear_algebra/lib:/home/guillermo/ws_caca/install/rplidar_ros/lib:/home/guillermo/ws_caca/install/openni2_camera/lib:/home/guillermo/ws_caca/install/openni2_camera_msgs/lib:/home/guillermo/ws_caca/install/laser_filters/lib:/home/guillermo/ws_caca/install/kobuki_safety_controller/lib:/home/guillermo/ws_caca/install/kobuki_random_walker/lib:/home/guillermo/ws_caca/install/kobuki_keyop/lib:/home/guillermo/ws_caca/install/kobuki_bumper2pc/lib:/home/guillermo/ws_caca/install/kobuki_ros_interfaces/lib:/home/guillermo/ws_caca/install/ecl_streams/lib:/home/guillermo/ws_caca/install/ecl_ipc/lib:/home/guillermo/ws_caca/install/ecl_devices/lib:/home/guillermo/ws_caca/install/ecl_threads/lib:/home/guillermo/ws_caca/install/ecl_formatters/lib:/home/guillermo/ws_caca/install/ecl_type_traits/lib:/home/guillermo/ws_caca/install/ecl_time/lib:/home/guillermo/ws_caca/install/ecl_time_lite/lib:/home/guillermo/ws_caca/install/ecl_io/lib:/home/guillermo/ws_caca/install/ecl_filesystem/lib:/home/guillermo/ws_caca/install/ecl_exceptions/lib:/home/guillermo/ws_caca/install/ecl_errors/lib:/home/guillermo/ws_caca/install/ecl_license/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/ PYTHONPATH=/home/guillermo/tello_ws/install/tello_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/guillermo/tello_ws/src/tello_ros/tello_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/guillermo/tello_ws/install/tello_gazebo
