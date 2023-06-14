@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing tello_simple_teleop.egg-info/PKG-INFO
+writing dependency_links to tello_simple_teleop.egg-info/dependency_links.txt
+writing entry points to tello_simple_teleop.egg-info/entry_points.txt
+writing requirements to tello_simple_teleop.egg-info/requires.txt
+writing top-level names to tello_simple_teleop.egg-info/top_level.txt
+reading manifest file 'tello_simple_teleop.egg-info/SOURCES.txt'
+writing manifest file 'tello_simple_teleop.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/guillermo/tfg/2022-tfg-guillermo-bernal/tello/tello_ws/install/tello_simple_teleop/lib/python3.10/site-packages/tello-simple-teleop.egg-link (link to .)
+Installing tello_simple_node script to /home/guillermo/tfg/2022-tfg-guillermo-bernal/tello/tello_ws/install/tello_simple_teleop/lib/tello_simple_teleop
+
+Installed /home/guillermo/tfg/2022-tfg-guillermo-bernal/tello/tello_ws/build/tello_simple_teleop
+running install_data

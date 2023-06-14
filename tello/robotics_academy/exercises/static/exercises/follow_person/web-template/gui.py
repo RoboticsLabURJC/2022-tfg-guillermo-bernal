@@ -72,10 +72,10 @@ class GUI:
 
     # Function for student to call
     def showImage(self, image):
-    	self.image_show_lock.acquire()
-    	self.image_to_be_shown = image
-    	self.image_to_be_shown_updated = True
-    	self.image_show_lock.release()
+        self.image_show_lock.acquire()
+        self.image_to_be_shown = image
+        self.image_to_be_shown_updated = True
+        self.image_show_lock.release()
 
     # Function to get the client
     # Called when a new client is received

@@ -128,7 +128,6 @@ class PublisherMotors(Node):
     def send_request(self, cmd):
         self.req.cmd = cmd
         self.future = self.cli.call_async(self.req)
-        rclpy.spin_until_future_complete(self, self.future)
         
     def takeoff(self):
         self.send_request('takeoff')

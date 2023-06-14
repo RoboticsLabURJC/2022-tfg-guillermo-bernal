@@ -39,6 +39,8 @@ RUN apt-get update && apt-get install -y \
   sudo \
   net-tools \
   && rm -rf /var/lib/apt/lists/* 
+
+RUN apt-get update && apt-get install -y alsa-utils alsa-oss
   
 # Install ROS2 and ROS packages
 RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg \
@@ -62,23 +64,44 @@ RUN apt-get update && apt-get install -y \
 # Install Gazebo 11
 RUN wget https://packages.osrfoundation.org/gazebo.gpg -O /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg \
   && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/gazebo-stable.list > /dev/null \
-  && rosdep update \
+  && sudo rosdep fix-permissions \
   && apt-get update && apt-get install -q -y \
     ros-${ROS_DISTRO}-gazebo* \
-  && rm -rf /var/lib/apt/lists/*
+    ros-${ROS_DISTRO}-ros-gz* \
+  && apt-get -y autoremove \
+	&& apt-get clean autoclean \
+  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN mkdir ~/.gazebo && touch ~/.gazebo/gui.ini
 
 #RUN apt-get install -y ros-humble-ecl-*
 RUN apt-get install -y ros-humble-pcl-* -y
 RUN sudo apt install ros-humble-rosidl-* -y
 
+# websocket server dependency
+RUN pip3 install websocket_server posix-ipc django djangorestframework==3.13.1 django-webpack-loader==1.5.0
+RUN python3.10 -m pip install websockets asyncio
+
 # pip install dependencies
-RUN pip install pylint
+RUN pip install pylint transitions pydantic websocket-client opencv-python
 
-# Install VNC
-RUN apt-get update && apt-get install -y x11vnc xvfb xterm
+RUN apt-get update && apt-get --no-install-recommends install -y \
+		x11vnc \
+		xterm \
+		xserver-xorg-video-dummy \
+		x11-apps \
+	&& apt-get -y autoremove \
+	&& apt-get clean autoclean \
+	&& rm -rf /var/lib/apt/lists/{apt,dpkg,cache,log} /tmp/* /var/tmp/*
 
-# Install noVNC
-#RUN apt-get update && apt-get install -y novnc
+RUN wget https://xpra.org/xorg.conf \
+    && rm -rf /tmp/*
+
+# Xorg segfault error mitigation
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        dbus-x11 \
+        libdbus-c++-1-0v5 && \
+    rm -rf /var/lib/apt/lists/*
+
 # Install VNC
 # Xorg segfault error mitigation
 RUN pip install pylint
@@ -106,8 +129,47 @@ RUN wget https://xpra.org/xorg.conf \
     && rm -rf /tmp/*
 
 
-# Install noVNC
+# VirtualGL
+COPY ./scripts/gpu/virtualgl_${VISRTUALGL_VERSION}_amd64.deb /
+RUN apt-get update && apt-get install -y \
+    libegl1-mesa:amd64
+RUN apt-get update && dpkg -i /virtualgl_${VISRTUALGL_VERSION}_amd64.deb && \
+    rm /virtualgl_${VISRTUALGL_VERSION}_amd64.deb
+
+COPY ./scripts/gpu/virtualgl32_${VISRTUALGL_VERSION}_amd64.deb /
+RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y \
+    libxtst6:i386 \
+    libxv1:i386 \
+    libglu1-mesa:i386 \
+    libegl1-mesa:i386
+RUN apt-get update && dpkg -i /virtualgl32_${VISRTUALGL_VERSION}_amd64.deb && \
+    rm /virtualgl32_${VISRTUALGL_VERSION}_amd64.deb && \
+    chmod u+s /usr/lib/libvglfaker.so && \
+    chmod u+s /usr/lib/libdlfaker.so && \
+    chmod u+s /usr/lib32/libvglfaker.so && \
+    chmod u+s /usr/lib32/libdlfaker.so  &&\
+    chmod u+s /usr/lib/i386-linux-gnu/libvglfaker.so && \
+    chmod u+s /usr/lib/i386-linux-gnu/libdlfaker.so 
+
+
+#RUN apt-get update && dpkg -i /turbovnc_${TURBOVNC_VERSION}_amd64.deb && \
+#    rm /turbovnc_${TURBOVNC_VERSION}_amd64.deb
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    /turbovnc_${TURBOVNC_VERSION}_amd64.deb && \
+    rm turbovnc_${TURBOVNC_VERSION}_amd64.deb && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && \
+    apt-get install -y lxde-common && \
+    rm -rf /var/lib/apt/lists/*
+
+
+# Install noVNC and websockify
 RUN git clone https://github.com/novnc/noVNC.git
+RUN cd /noVNC/utils && git clone https://github.com/novnc/websockify.git
+
+ENV PATH "$PATH:/opt/VirtualGL/bin:/opt/TurboVNC/bin"
 
 # Source ros humble
 RUN echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
